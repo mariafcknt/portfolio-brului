@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+    background: #FFFCF9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.icon {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.icon > img {
+    height: auto;
+    display: block;
+   
+}
+
+header > h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 10px;
+    color: #0C0C15;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+nav > a {
+    color: #0C0C15;
+    padding: 5px;
+
+}
+nav > a:hover {
+    text-decoration: underline; 
+    color: #AE8C49;
+}
+nav > .home {
+    color: #AE8C49;
+}
+
+/*MAIN*/
+
+main {
+    flex: 1 1 0;
+    padding: 20px;
+    font-family: "Nunito", sans-serif;
+}
+ 
+.grid-wrapper {
+    /*padding: 10px;*/
+    margin: 6rem;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+
+    
+}
+
+.grid-wrapper .wide{
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall{
+    grid-column: span 2;
+}
+
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-wrapper > div > img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    object-fit: cover;
+
+}
+
+.grid-wrapper > div {
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #E3DACF;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #545352;
+    font-size: 1.4rem;
+
+}
+
+footer > .links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
+    height: 100%;
+    width: 9rem;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    justify-content: center;
+    padding: 5px;
+    transition: background-color 0.5s;
+}
+
+.btn > img {
+    width: 2.4rem;
+    margin-right: 3px;
+}
+
+.btn > a {
+    text-decoration: none;
+    color: #545352;
+    
+}
+
+.btn:hover {
+    background-color: #FFFCF9;
+    color:#525452;
+
+}
+
+
