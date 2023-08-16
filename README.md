@@ -1,5 +1,5 @@
 # portfolio-brului
- Projeto de site de portfolio para a artista Brului
+ Projeto de site portfolio para a artista Brului
 
  Olá! Esse projeto tem como objetivo divulgar as artes da BruLui, artista e amiga minha.
 
@@ -7,6 +7,5 @@
 
  O projeto ainda está em andamento! Mas você já pode conhecer o trabalho da BruLui acessando os links abaixo:
 
-https://www.instagram.com/bru__lui/
-
-https://twitter.com/Bru__Lui
+- [Instagram](https://www.instagram.com/bru__lui/)
+- [X (Twitter)](https://twitter.com/Bru__Lui)
