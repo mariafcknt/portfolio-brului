@@ -1,4 +1,4 @@
-# Portfolio de arte
+# Portfolio de artes da BruLui
  Projeto de site portfolio para a artista Brului
 
  Olá! Esse projeto tem como objetivo divulgar as artes da BruLui, artista e amiga minha.
