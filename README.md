@@ -19,6 +19,6 @@
 - [ ] Hospedagem no GitHub Pages
 
 ## Imagens
-![previa](https://github.com/mariafcknt/portfolio-brului/assets/105084673/cdc1de9a-8c88-4679-9f59-f3c3b5265e08)
+![Screenshot da página inicial](https://github.com/mariafcknt/portfolio-brului/assets/105084673/0e2d732a-11f9-4bd0-88b2-01d132869887)
 
 
