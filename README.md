@@ -14,6 +14,7 @@
 ## Andamento do projeto
 - [x] Criação de [protótipo](https://www.figma.com/file/PsfgN6ezP3b7w8LuxTNH8t/Portfolio?type=design&node-id=0%3A1&mode=design&t=tOClxH48kZjCOfkS-1) no Figma
 - [x] Página inicial
+- [ ] Galeria de imagens
 - [ ] Página "Sobre"
 - [ ] Dark Mode
 - [ ] Hospedagem no GitHub Pages
