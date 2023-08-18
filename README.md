@@ -11,6 +11,8 @@
 - [Instagram](https://www.instagram.com/bru__lui/)
 - [X (Twitter)](https://twitter.com/Bru__Lui)
 
+Acesse a prévia da página disponível no [GitHub Pages](https://mariafcknt.github.io/portfolio-brului/)
+
 ## Andamento do projeto
 - [x] Criação de [protótipo](https://www.figma.com/file/PsfgN6ezP3b7w8LuxTNH8t/Portfolio?type=design&node-id=0%3A1&mode=design&t=tOClxH48kZjCOfkS-1) no Figma
 - [x] Página inicial
