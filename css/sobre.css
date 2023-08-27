@@ -8,6 +8,8 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
 }
 
 /*HEADER*/
@@ -42,7 +44,6 @@ a {
 }
 
 nav {
-    font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
 }
 nav > a {
@@ -54,7 +55,7 @@ nav > a:hover {
     text-decoration: underline; 
     color: #AE8C49;
 }
-nav > .home {
+nav > .sobre {
     color: #AE8C49;
 }
 
@@ -64,35 +65,47 @@ main {
     flex: 1 1 0;
     align-items: center;
     margin: 0 auto;
+    margin: 2rem 2rem;
+    text-align: center;
 }
 
-main > .container {
+a {
+    text-decoration: none;
+    color: #AE8C49;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.comissions {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /*margin: 40px 20px 0 20px;*/
-    margin: 2rem 9rem 3rem 9rem;
+    margin: 0 auto;
 }
 
-main > .container .box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
+.table {
+    width: 40%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    
 }
 
-main > .container .dream {
-    display: flex;
-    flex-direction: column;
-    width: 30%; /*32.5*/
+.table td, .table th {
+    padding: 12px 15px;
+
+    text-align: center;
 }
 
-main > .container .dream img {
-    width: 92%;
-    padding-bottom: 15px;
-    border-radius: 5px;
+.table th {
+    background-color: #C6A87F;
+
 }
 
+.table tbody tr:nth-child(even){
+    background-color: #E3DACF;
+}
 
 @media only screen and (max-width: 770px) {
     header > h1 {
@@ -101,22 +114,8 @@ main > .container .dream img {
     nav {
         font-size: 1.5rem;
     }
-    main > .container {
-        margin: 2rem 2rem;
-    }
-
-    main > .container .box {
-        flex-direction: column;
-    }
-
-    main > .container .dream {
+    .table {
         width: 100%;
-    }
-
-    main > .container .dream img {
-        width: 100%;
-        padding-bottom: 15px;
-        border-radius: 5px;
     }
 }
 
@@ -125,7 +124,6 @@ main > .container .dream img {
 
 footer {
     background-color: #E3DACF;
-    font-family: "Nunito", sans-serif;
     text-align: center;
     margin: 0;
     bottom: 0;
@@ -150,7 +148,6 @@ footer > .links {
     align-items: center;
     border-style: none;
     background-color: rgba(0, 0, 0, 0);
-    font-family: "Nunito", sans-serif;
     font-size: 1.4rem;
     height: 100%;
     width: 9rem;
@@ -180,5 +177,6 @@ footer > .links {
 
 }
 
-
-
+span {
+    font-size: 1rem;
+}
