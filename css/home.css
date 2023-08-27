@@ -31,7 +31,7 @@ header {
 header > h1 {
     font-family: 'Abril Fatface', cursive;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 10px;
     color: #0C0C15;
     margin-bottom: 1.5rem;
@@ -43,7 +43,7 @@ a {
 
 nav {
     font-family: "Nunito", sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 nav > a {
     color: #0C0C15;
@@ -72,7 +72,7 @@ main > .container {
     justify-content: center;
     align-items: center;
     /*margin: 40px 20px 0 20px;*/
-    margin: 3rem 6rem 3rem 6rem;
+    margin: 2rem 9rem 3rem 9rem;
 }
 
 main > .container .box {
@@ -84,7 +84,7 @@ main > .container .box {
 main > .container .dream {
     display: flex;
     flex-direction: column;
-    width: 32.5%;
+    width: 30%; /*32.5*/
 }
 
 main > .container .dream img {
@@ -92,6 +92,34 @@ main > .container .dream img {
     padding-bottom: 15px;
     border-radius: 5px;
 }
+
+
+@media only screen and (max-width: 770px) {
+    header > h1 {
+        font-size: 3.5rem;
+    }
+    nav {
+        font-size: 1.8rem;
+    }
+    main > .container {
+        margin: 3rem 3rem 3rem 3rem;
+    }
+
+    main > .container .box {
+        flex-direction: column;
+    }
+
+    main > .container .dream {
+        width: 100%;
+    }
+
+    main > .container .dream img {
+        width: 100%;
+        padding-bottom: 15px;
+        border-radius: 5px;
+    }
+}
+
 
 /*FOOTER*/
 
@@ -151,5 +179,6 @@ footer > .links {
     color:#525452;
 
 }
+
 
 
