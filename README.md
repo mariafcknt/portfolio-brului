@@ -17,9 +17,9 @@ Acesse a prévia da página disponível no [GitHub Pages](https://mariafcknt.git
 - [x] Criação de [protótipo](https://www.figma.com/file/PsfgN6ezP3b7w8LuxTNH8t/Portfolio?type=design&node-id=0%3A1&mode=design&t=tOClxH48kZjCOfkS-1) no Figma
 - [x] Página inicial
 - [ ] Galeria de imagens - JavaScript
-- [ ] Página "Sobre"
+- [X] Página "Sobre"
 - [ ] Dark Mode
-- [ ] Hospedagem no GitHub Pages
+- [X] Hospedagem no GitHub Pages
 
 ## Imagens
 ![Screenshot da página inicial](https://github.com/mariafcknt/portfolio-brului/assets/105084673/0e2d732a-11f9-4bd0-88b2-01d132869887)
