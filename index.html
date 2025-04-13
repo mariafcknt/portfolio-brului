@@ -10,8 +10,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@500&display=swap" rel="stylesheet">
-    
+
     <title>BruLui - Portfolio</title>
+    <style>
+        /* Estilos customizados para o SnapWidget */
+        .snapwidget-container {
+            width: 100%;
+            overflow: hidden; /* Garante que o conteúdo não vaze */
+        }
+
+        .snapwidget-grid {
+            display: grid;
+            gap: 10px; /* Espaçamento entre as fotos */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cria colunas responsivas com mínimo de 150px */
+        }
+
+        .snapwidget-grid > iframe {
+            width: 100% !important;
+            height: auto !important;
+            border: none;
+        }
+
+        /* Estilos para desktop (3 fotos por linha, 4 linhas) */
+        @media (min-width: 769px) {
+            .snapwidget-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Estilos para mobile (1 foto por linha) */
+        @media (max-width: 768px) {
+            .snapwidget-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,50 +60,23 @@
 
     <main>
         <div class="container">
-            <div class="box">
-
-                <div class="dream">
-                    <img src="./img/cafe.jpg" alt="">
-                    <img src="./img/Phos.jpg" alt="">
-                    <img src="./img/Moon.jpg" alt="">
-                </div>    
-                
-                <div class="dream">
-                    <img src="./img/Ai.jpg" alt="">
-                    <img src="./img/Brinco.jpg" alt="">
-                    <img src="./img/bicolor.jpg" alt="">
-                </div>
-
-                <div class="dream">
-                    <img src="./img/LapisLazuli.jpg" alt="">
-                    <img src="./img/Antarc.jpg" alt="">
-                    <img src="./img/Yamiyo.jpg" alt="">
-                </div>
-
-                <div class="dream">
-                    <img src="./img/padpa.jpg" alt="">
-                    <img src="./img/Jet.jpg" alt="">
-                    <img src="./img/Cinnabar.jpg" alt="">
+            <div class="snapwidget-container">
+                <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                <div class="snapwidget-grid">
+                    <iframe
+                        src="https://snapwidget.com/embed/1093232"
+                        class="snapwidget-widget"
+                        allowtransparency="true"
+                        frameborder="0"
+                        scrolling="no"
+                        style="border: none; overflow: hidden; width: 100%; min-height: 400px;"
+                        title="Posts' from Instagram">
+                    </iframe>
                 </div>
             </div>
         </div>
     </main>
 
-    <!--<div class="grid-wrapper">
-        <div>
-            <img src="img/divine.jpg" class="tall">
-        </div>
-        <div>
-            <img src="img/magic.jpg" class="wide">
-        </div>
-        <div>
-            <img src="img/moon.jpg" class="big">
-        </div>
-        <div>
-            <img src="img/Earring.jpg" class="big">
-        </div>
-    </div>-->
-    
     <footer>
         <p>Siga-me nas redes sociais!</p>
         <div class="links">
@@ -82,7 +88,7 @@
                 <img src="./icon/icon_x.svg">
                 <a href="https://twitter.com/Bru__Lui" target="_blank">@BruLui</a>
             </div>
-        
+
         </div>
     </footer>
 </body>
