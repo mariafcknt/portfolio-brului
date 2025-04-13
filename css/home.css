@@ -64,64 +64,55 @@ nav > .home {
 /*MAIN*/
 
 main {
-    flex: 1 1 0;
-    display: flex; /* Tornar main um flex container */
-    justify-content: center; /* Centralizar horizontalmente os itens diretos dentro de main */
-    align-items: center; /* Centralizar verticalmente os itens diretos dentro de main (se necessário) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main > .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente dentro do container */
-    /* justify-content: center; */ /* Pode ser usado para centralizar verticalmente também */
-    margin: 2rem; /* Ajuste as margens conforme necessário */
+    align-items: center;
+    margin: 2rem;
     padding: 0;
-    max-width: 1200px; /* Defina uma largura máxima para o container, se desejar */
-    width: 100%; /* Garante que o container ocupe a largura disponível do main */
-}
-
-.snapwidget-container {
+    max-width: 1200px;
     width: 100%;
-    overflow: hidden;
-    display: flex; /* Para centralizar o iframe, se necessário */
-    justify-content: center; /* Para centralizar o iframe, se necessário */
-}
-
-.snapwidget-grid {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: 100%; /* Garante que o grid ocupe a largura do container */
-}
-
-.snapwidget-grid > iframe {
-    width: 100% !important;
-    height: auto !important;
-    border: none;
-    /* margin: 0 auto; Tente isso também para centralizar o iframe dentro da célula do grid */
 }
 
 @media only screen and (max-width: 770px) {
     header > h1 {
         font-size: 3rem;
     }
-
     nav {
         font-size: 1.5rem;
     }
-
-    main {
-        padding: 2rem; /* Adicione padding ao main em telas menores, se necessário */
-    }
-
     main > .container {
-        margin: 0; /* Remova margens específicas em telas menores */
+        margin: 2rem 2rem;
     }
 
-    .snapwidget-grid {
-        grid-template-columns: 1fr;
+    main > .container .box {
+        flex-direction: column;
     }
+}
+
+
+.snapwidget-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.snapwidget-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Estilo padrão para telas maiores */
+    width: 100%;
+}
+
+.snapwidget-grid > iframe {
+    width: 100% !important;
+    height: auto !important;
+    border: none;
+    display: block;
 }
 
 /*FOOTER*/
@@ -177,4 +168,11 @@ footer > .links {
 .btn:hover {
     background-color: #FFFCF9;
     color: #525452;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 770px) {
+    .snapwidget-grid {
+        grid-template-columns: 1fr; /* Define uma única coluna para telas menores */
+    }
 }

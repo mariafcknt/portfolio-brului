@@ -12,39 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@500&display=swap" rel="stylesheet">
 
     <title>BruLui - Portfolio</title>
-    <style>
-        /* Estilos customizados para o SnapWidget */
-        .snapwidget-container {
-            width: 100%;
-            overflow: hidden; /* Garante que o conteúdo não vaze */
-        }
-
-        .snapwidget-grid {
-            display: grid;
-            gap: 10px; /* Espaçamento entre as fotos */
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cria colunas responsivas com mínimo de 150px */
-        }
-
-        .snapwidget-grid > iframe {
-            width: 100% !important;
-            height: auto !important;
-            border: none;
-        }
-
-        /* Estilos para desktop (3 fotos por linha, 4 linhas) */
-        @media (min-width: 769px) {
-            .snapwidget-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        /* Estilos para mobile (1 foto por linha) */
-        @media (max-width: 768px) {
-            .snapwidget-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -62,18 +29,18 @@
         <div class="container">
             <div class="snapwidget-container">
                 <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                <div class="snapwidget-grid">
-                    <iframe
-                        src="https://snapwidget.com/embed/1093232"
-                        class="snapwidget-widget"
-                        allowtransparency="true"
-                        frameborder="0"
-                        scrolling="no"
-                        style="border: none; overflow: hidden; width: 100%; min-height: 400px;"
-                        title="Posts' from Instagram">
-                    </iframe>
-                </div>
+                <iframe
+                    src="https://snapwidget.com/embed/1093232"
+                    class="snapwidget-widget"
+                    allowtransparency="true"
+                    frameborder="0"
+                    scrolling="no"
+                    style="border: none; overflow: hidden; width: 100%;"
+                    title="Posts' from Instagram">
+                </iframe>
             </div>
+
+            
         </div>
     </main>
 
