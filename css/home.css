@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +8,6 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
 }
 
 /*HEADER*/
@@ -18,15 +18,14 @@ header {
     align-items: center;
     padding: 2%;
 }
-
 .icon {
     border-radius: 50%;
     overflow: hidden;
 }
-
 .icon > img {
     height: auto;
     display: block;
+   
 }
 
 header > h1 {
@@ -46,17 +45,15 @@ nav {
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
 }
-
 nav > a {
     color: #0C0C15;
     padding: 5px;
-}
 
+}
 nav > a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
     color: #AE8C49;
 }
-
 nav > .home {
     color: #AE8C49;
 }
@@ -64,63 +61,65 @@ nav > .home {
 /*MAIN*/
 
 main {
-    display: flex;
-    justify-content: center;
+    flex: 1 1 0;
     align-items: center;
+    margin: 0 auto;
 }
 
 main > .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 2rem;
-    padding: 0;
-    max-width: 1200px;
-    width: 100%;
+    /*margin: 40px 20px 0 20px;*/
+    margin: 2rem 9rem 3rem 9rem;
 }
 
-.snapwidget-container {
-    width: 100%;
-    overflow: hidden;
-    /* Vamos tentar restringir a altura do container */
-    /* height: auto; /* Já deve ser o padrão, mas explicitando */
+main > .container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
 }
 
-.snapwidget-grid {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: 100%;
+main > .container .dream {
+    display: flex;
+    flex-direction: column;
+    width: 30%; /*32.5*/
 }
 
-.snapwidget-grid > iframe {
-    width: 100% !important;
-    height: auto !important; /* Deixa a altura do iframe se ajustar ao conteúdo */
-    border: none;
-    display: block;
+main > .container .dream img {
+    width: 92%;
+    padding-bottom: 15px;
+    border-radius: 5px;
 }
+
 
 @media only screen and (max-width: 770px) {
     header > h1 {
         font-size: 3rem;
     }
-
     nav {
         font-size: 1.5rem;
     }
-
-    main {
-        padding: 2rem;
-    }
-
     main > .container {
-        margin: 0;
+        margin: 2rem 2rem;
     }
 
-    .snapwidget-grid {
-        grid-template-columns: 1fr;
+    main > .container .box {
+        flex-direction: column;
+    }
+
+    main > .container .dream {
+        width: 100%;
+    }
+
+    main > .container .dream img {
+        width: 100%;
+        padding-bottom: 15px;
+        border-radius: 5px;
     }
 }
+
 
 /*FOOTER*/
 
@@ -131,9 +130,11 @@ footer {
     margin: 0;
     bottom: 0;
     padding: 2rem 0;
+    /*padding-bottom: 2rem;*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     color: #545352;
     font-size: 1.4rem;
 }
@@ -170,9 +171,14 @@ footer > .links {
 .btn > a {
     text-decoration: none;
     color: #545352;
+    
 }
 
 .btn:hover {
     background-color: #FFFCF9;
-    color: #525452;
+    color:#525452;
+
 }
+
+
+
